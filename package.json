@@ -1,0 +1,14 @@
+{
+  "name": "campusbuddy",
+  "version": "0.1.0",
+  "description": "CampusBuddy: a mobile-friendly chat app that answers student questions using only the campus information you provide.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  }
+}

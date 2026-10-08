@@ -1,0 +1,14 @@
+# Dependencies (CampusBuddy currently has none, but keep this if you add some)
+node_modules/
+
+# Local secrets and configuration. Never commit real API keys.
+.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
