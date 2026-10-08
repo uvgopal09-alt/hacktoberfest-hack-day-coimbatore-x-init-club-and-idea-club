@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="CampusBuddy answers student questions using only the campus information provided by the college." />
+    <meta name="theme-color" content="#2456d6" />
+    <meta name="color-scheme" content="light" />
+    <title>CampusBuddy</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">CB</span>
+          <div>
+            <h1>CampusBuddy</h1>
+            <p>Ask about campus. Answers come only from the college's information.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="chat" id="chat-log" role="log" aria-live="polite" aria-label="Conversation with CampusBuddy"></div>
+
+      <section class="suggestions" id="suggestions" aria-label="Suggested questions"></section>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <label class="visually-hidden" for="question">Type your question</label>
+        <input
+          id="question"
+          name="question"
+          type="text"
+          placeholder="Ask a question…"
+          maxlength="500"
+          enterkeydhint="send"
+        />
+        <button class="send-button" id="send-button" type="submit">Send</button>
+      </form>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
